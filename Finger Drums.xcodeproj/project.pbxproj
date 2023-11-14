@@ -11,6 +11,12 @@
 		419B44AE2B03CE9500A377DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B44AD2B03CE9500A377DF /* ContentView.swift */; };
 		419B44B02B03CE9700A377DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419B44AF2B03CE9700A377DF /* Assets.xcassets */; };
 		419B44B32B03CE9700A377DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419B44B22B03CE9700A377DF /* Preview Assets.xcassets */; };
+		419B44F62B041E3F00A377DF /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B44F52B041E3F00A377DF /* SoundPlayer.swift */; };
+		419B44F92B04272D00A377DF /* closed-hi-hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 419B44F82B04272D00A377DF /* closed-hi-hat.wav */; };
+		419B44FB2B04274000A377DF /* crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 419B44FA2B04274000A377DF /* crash.wav */; };
+		419B44FD2B04274B00A377DF /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 419B44FC2B04274B00A377DF /* kick.wav */; };
+		419B44FF2B04275900A377DF /* open-hi-hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 419B44FE2B04275900A377DF /* open-hi-hat.wav */; };
+		419B45012B04276500A377DF /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 419B45002B04276500A377DF /* snare.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		419B44AF2B03CE9700A377DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419B44B22B03CE9700A377DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		419B44B42B03CE9700A377DF /* Finger_Drums.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Finger_Drums.entitlements; sourceTree = "<group>"; };
+		419B44F52B041E3F00A377DF /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		419B44F82B04272D00A377DF /* closed-hi-hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "closed-hi-hat.wav"; sourceTree = "<group>"; };
+		419B44FA2B04274000A377DF /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
+		419B44FC2B04274B00A377DF /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		419B44FE2B04275900A377DF /* open-hi-hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "open-hi-hat.wav"; sourceTree = "<group>"; };
+		419B45002B04276500A377DF /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,10 @@
 		419B44AA2B03CE9500A377DF /* Finger Drums */ = {
 			isa = PBXGroup;
 			children = (
+				419B44F72B0426F200A377DF /* Drum Samples */,
 				419B44AB2B03CE9500A377DF /* Finger_DrumsApp.swift */,
 				419B44AD2B03CE9500A377DF /* ContentView.swift */,
+				419B44F52B041E3F00A377DF /* SoundPlayer.swift */,
 				419B44AF2B03CE9700A377DF /* Assets.xcassets */,
 				419B44B42B03CE9700A377DF /* Finger_Drums.entitlements */,
 				419B44B12B03CE9700A377DF /* Preview Content */,
@@ -67,6 +81,19 @@
 				419B44B22B03CE9700A377DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		419B44F72B0426F200A377DF /* Drum Samples */ = {
+			isa = PBXGroup;
+			children = (
+				419B45002B04276500A377DF /* snare.wav */,
+				419B44FE2B04275900A377DF /* open-hi-hat.wav */,
+				419B44FC2B04274B00A377DF /* kick.wav */,
+				419B44FA2B04274000A377DF /* crash.wav */,
+				419B44F82B04272D00A377DF /* closed-hi-hat.wav */,
+			);
+			name = "Drum Samples";
+			path = "../Drum Samples";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +154,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				419B44FD2B04274B00A377DF /* kick.wav in Resources */,
 				419B44B32B03CE9700A377DF /* Preview Assets.xcassets in Resources */,
 				419B44B02B03CE9700A377DF /* Assets.xcassets in Resources */,
+				419B44FB2B04274000A377DF /* crash.wav in Resources */,
+				419B45012B04276500A377DF /* snare.wav in Resources */,
+				419B44F92B04272D00A377DF /* closed-hi-hat.wav in Resources */,
+				419B44FF2B04275900A377DF /* open-hi-hat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				419B44AE2B03CE9500A377DF /* ContentView.swift in Sources */,
+				419B44F62B041E3F00A377DF /* SoundPlayer.swift in Sources */,
 				419B44AC2B03CE9500A377DF /* Finger_DrumsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
